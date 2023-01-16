@@ -1,50 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import { Bars3Icon } from '@heroicons/react/24/solid';
+import fp from './image/fp.png'
 
 function App() {
   return (
     <div>
-      <div class="container mx-auto mt-12">
-        <h1 class="text-2xl text-blue-700 font-bold mb-3 ">Are you ready?</h1>
-        <button class="btn-blue">
-          Yes
-        </button>
-        <button class="btn-red">
-          No
-        </button>
-      </div>
-      <div class="container mx-auto mt-12">
-      <h1 class="text-2xl text-blue-700 font-bold mb-3 ">Kartu Misterius</h1>
-        <div class="grid grid-cols-4 grid-rows-2 gap-4">
-          <div class="sm:col-span-4 md:col-span-2">
-            <div class="text-center bg-blue-100 rounded p-4 border-2 border-blue-500">
-            Column 1
-            <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="w-full"></img>
+      <div>
+        <nav className="lg:container py-3 lg:mx-auto mx-5 flex justify-between">
+          <div className="text-2xl font-black my-auto align-middle">AGUNG.</div>
+          <div className="lg:flex lg:space-x-10 text-lg">
+            <div className="font-bold hidden lg:block hover:font-black my-auto align-middle">Home</div>
+            <div className="font-bold hidden lg:block hover:font-black my-auto align-middle">Experience</div>
+            <div className="font-bold hidden lg:block hover:font-black my-auto align-middle">Portofolio</div>
+            <button className="font-bold hidden lg:block text-center border-2 rounded-full px-4 py-2 align-middle bg-teal-300 hover:bg-teal-400 text-cyan-800 ">Contact Us</button>
+            <div className="font-bold block lg:hidden">
+              <Bars3Icon className="h-auto w-8"/>
             </div>
           </div>
-          <div class="sm:col-span-4 md:col-span-2">
-          <div class="text-center bg-blue-100 rounded p-4 border-2 border-blue-500">
-            Column 2
-            <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="w-full"></img>
-            </div>
+        </nav>
+        <div className="container mx-auto flex h-screen">
+          <div className="w-1/2 my-auto align-middle">
+            <div className="text-2xl font-bold">Hai, my name is...</div>
+            <div className="py-3 text-6xl font-black"> Mohamad Agung Faisal</div>
+            <div className="py-2 text-lg">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</div>
           </div>
-          <div class="sm:col-span-4 md:col-span-2 ">
-          <div class="text-center bg-blue-100 rounded p-4 border-2 border-blue-500">
-            Column 3
-            <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="w-full"></img>
-            </div>
-          </div>
-          <div class="sm:col-span-4 md:col-span-2">
-          <div class="text-center bg-blue-100 rounded p-4 border-2 border-blue-500">
-            Column 4
-            <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="w-full"></img>
-            </div>
-          </div>
-          <div class="sm:col-span-4 md:col-span-2 ">
-          <div class="text-center bg-blue-100 rounded p-4 border-2 border-blue-500">
-            Column 5
-            <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="w-full"></img>
-            </div>
+          <div className="w-1/2 mx-auto allign-center my-auto">
+            <img className="mx-auto w-3/4" src={fp}></img>
           </div>
         </div>
       </div>
