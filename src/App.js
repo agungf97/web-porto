@@ -36,9 +36,9 @@ function App() {
           </div>
         </div>
       </div>        
-      <div className="container bg-slate-300 mx-auto py-8 px-6">
-        <div className="mx-auto h-full">
-            <div className="md:text-4xl text-lg font-semibold text-center">About Me.</div>
+      <div className="bg-slate-300 mx-auto py-8 px-6">
+        <div className="container mx-auto h-full">
+            <div className="md:text-4xl text-lg font-semibold">About Me.</div>
             <div className="py-3 mt-4 md:text-6xl text-xl font-bold">Why hire me in your company?</div>
             <div className="py-2  mt-4 md:text-lg text-sm">I have 1 years experience work as developer. I make Mobile App using Android Studio nad make Web Landing Page using CodeIgniter. Now i learn more deeper about ReactJS and NextJS as a Frontend Developer. I create a lot of reusable components to support my work later on.</div>
             <div className="py-2 md:text-lg text-sm">I believe with my ability and my hard work can bring the best results for the company. because I love code and I really like the challenge of getting things done.</div>
