@@ -59,19 +59,19 @@ function App() {
           <div>
             <img className="mx-auto md:w-2/3 w-1/3" src={cs} alt=""/>
             <div className="text-center md:text-xl text-sm mt-2">
-              HTML 
+              CSS 
             </div>
           </div>
           <div>
             <img className="mx-auto md:w-2/3 w-1/3" src={rj} alt=""/>
             <div className="text-center md:text-xl text-sm mt-2">
-              HTML 
+              ReactJS 
             </div>
           </div>
           <div>
             <img className="mx-auto md:w-2/3 w-1/3" src={tc} alt=""/>
             <div className="text-center md:text-xl text-sm mt-2">
-              HTML 
+              TailwindCSS 
             </div>
           </div>
         </div>
