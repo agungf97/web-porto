@@ -132,14 +132,29 @@ function App() {
           <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
         </div>
       </div>
-      <div className="container bg-gray-300 mx-auto py-10 px-6">
+      <div className="container bg-gray-300 mx-auto py-10 px-6 w-30 h-auto">
         <div className="text-center font-bold text-3xl">Contact Us</div>
         <div className="flex justify-around mt-10">
-          <a href="https://wa.me/6281215552690"><img className="mx-auto md:w-1/2 w-1/4" src={wa} alt=""/>WhatsApp</a>
-          <a href="https://telegram.me/agungf97"><img className="mx-auto md:w-1/2 w-1/4" src={tl} alt=""/>telegram</a>
-          <a href="https://www.instagram.com/agungf97/"><img className="mx-auto md:w-1/2 w-1/4" src={ig} alt=""/>Instagram</a>
-          <a href="https://www.linkedin.com/in/agungf97/"><img className="mx-auto md:w-1/2 w-1/4" src={lin} alt=""/>LinkedIn</a>
-          <a href="https://github.com/agungf97"><img className="mx-auto md:w-1/2 w-1/4" src={gh} alt=""/>Github</a>
+          <a href="https://wa.me/6281215552690">
+            <img className="mx-auto md:w-2/6 w-1/6" src={wa} alt=""/>
+            <div className="text-center mt-2">WhatsApp</div>
+          </a>
+          <a href="https://telegram.me/agungf97">
+            <img className="mx-auto md:w-2/6 w-1/6" src={tl} alt=""/>
+            <div className="text-center mt-2">Telegram</div>
+          </a>
+          <a href="https://www.instagram.com/agungf97/">
+            <img className="mx-auto md:w-2/6 w-1/6" src={ig} alt=""/>
+            <div className="text-center mt-2">Instagram</div>
+          </a>
+          <a href="https://www.linkedin.com/in/agungf97/">
+            <img className="mx-auto md:w-2/6 w-1/6" src={lin} alt=""/>
+            <div className="text-center mt-2">LinkedIn</div>
+          </a>
+          <a href="https://github.com/agungf97">
+            <img className="mx-auto md:w-2/6 w-1/6" src={gh} alt=""/>
+            <div className="text-center mt-2">Github</div>
+          </a>
         </div>
       </div>
     </div>
