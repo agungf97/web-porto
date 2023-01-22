@@ -4,7 +4,12 @@ import fp from '../src/image/fp.png';
 import ht from '../src/image/html.png';
 import cs from '../src/image/css.png';
 import rj from '../src/image/React.png';
-import tc from '../src/image/tailwindcss.png'
+import tc from '../src/image/tailwindcss.png';
+import wa from '../src/image/whatsapp.png';
+import tl from '../src/image/telegram.png';
+import ig from '../src/image/instagram.png';
+import lin from '../src/image/linkedin.png';
+import gh from '../src/image/github.png';
 
 function App() {
   return (
@@ -127,14 +132,17 @@ function App() {
           <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
         </div>
       </div>
-      <div className="container mx-auto py-10 px-6">
+      <div className="container bg-gray-300 mx-auto py-10 px-6">
         <div className="text-center font-bold text-3xl">Contact Us</div>
-        <div>WhatsApp</div>
-        <div>Instagram</div>
-        <div>Telegram</div>
+        <div className="flex justify-around mt-10">
+          <a href="https://wa.me/6281215552690"><img className="mx-auto md:w-1/2 w-1/4" src={wa} alt=""/>WhatsApp</a>
+          <a href="https://telegram.me/agungf97"><img className="mx-auto md:w-1/2 w-1/4" src={tl} alt=""/>telegram</a>
+          <a href="https://www.instagram.com/agungf97/"><img className="mx-auto md:w-1/2 w-1/4" src={ig} alt=""/>Instagram</a>
+          <a href="https://www.linkedin.com/in/agungf97/"><img className="mx-auto md:w-1/2 w-1/4" src={lin} alt=""/>LinkedIn</a>
+          <a href="https://github.com/agungf97"><img className="mx-auto md:w-1/2 w-1/4" src={gh} alt=""/>Github</a>
+        </div>
       </div>
     </div>
   );
 }
-
 export default App;
