@@ -1,10 +1,12 @@
 import './App.css';
 import { Bars3Icon } from '@heroicons/react/24/solid';
-import fp from './image/fp.png';
+import fp from '../src/image/fp.png';
 import ht from '../src/image/html.png';
-import cs from './image/css.png';
-import rj from './image/React.png';
-import tc from './image/tailwindcss.png';
+import cs from '../src/image/css.png';
+import rj from '../src/image/React.png';
+import tc from '../src/image/tailwindcss.png'
+// import p from '../src/image/ps.png';
+// import cr from '../src/image/crl.png'
 
 function App() {
   return (
@@ -48,11 +50,11 @@ function App() {
       </div>
       <div className="container mx-auto py-10 px-6">
         <div className="text-center mt-8 md:text-4xl text-xl font-bold mb-10">Skill's</div>
-        <div className="md:flex justify-around">
+        <div className="flex justify-between">
           <div>
             <img className="mx-auto md:w-1/2 w-1/4" src={ht} alt=""/>
             <div className="text-center md:text-xl text-sm mt-2">
-              HTML 
+              HTML
             </div>
           </div>
           <div>
@@ -73,12 +75,24 @@ function App() {
               TailwindCSS 
             </div>
           </div>
+          {/* <div>
+            <img className="mx-auto md:w-20 w-1/4" src={p} alt=""/>
+            <div className="text-center md:text-xl text-sm mt-2">
+              Adobe Photoshop 
+            </div>
+          </div>
+          <div>
+            <img className="mx-auto md:w-20" src={cr} alt=""/>
+            <div className="text-center md:text-xl text-sm mt-2">
+              CorelDraw 
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-10 bg-slate-400">
         <div className="container mx-auto py-10 px-6">
           <div className="font-bold text-3xl text-center">My Experience</div>
-            <div className="flex flex-wrap justify-between mx-auto px-3">
+            <div className="md:flex md:flex-wrap justify-between mx-auto px-3">
               <div className="mt-6">
                 <div className="text-xl font-bold">Kit Worker - <span className="font-semibold">Designer Graphic</span></div>
                 <div className="text-sm font-normal">2016-2017</div>
