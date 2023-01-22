@@ -5,8 +5,6 @@ import ht from '../src/image/html.png';
 import cs from '../src/image/css.png';
 import rj from '../src/image/React.png';
 import tc from '../src/image/tailwindcss.png'
-// import p from '../src/image/ps.png';
-// import cr from '../src/image/crl.png'
 
 function App() {
   return (
@@ -75,18 +73,6 @@ function App() {
               TailwindCSS 
             </div>
           </div>
-          {/* <div>
-            <img className="mx-auto md:w-20 w-1/4" src={p} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              Adobe Photoshop 
-            </div>
-          </div>
-          <div>
-            <img className="mx-auto md:w-20" src={cr} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              CorelDraw 
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="mt-10 bg-slate-400">
@@ -131,6 +117,21 @@ function App() {
               </div>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto py-10 px-6">
+        <div className="text-center font-bold text-3xl">Portofolio</div>
+        <div className="md:flex md:flex-wrap justify-around mt-8">
+          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+        </div>
+      </div>
+      <div className="container mx-auto py-10 px-6">
+        <div className="text-center font-bold text-3xl">Contact Us</div>
+        <div>WhatsApp</div>
+        <div>Instagram</div>
+        <div>Telegram</div>
       </div>
     </div>
   );
