@@ -1,10 +1,10 @@
 import './App.css';
 import { Bars3Icon } from '@heroicons/react/24/solid';
-import fp from '../src/image/fp.png';
-import ht from '../src/image/html.png';
-import cs from '../src/image/css.png';
-import rj from '../src/image/React.png';
-import tc from '../src/image/tailwindcss.png';
+// import fp from '../src/image/fp.png';
+// import ht from '../src/image/html.png';
+// import cs from '../src/image/css.png';
+// import rj from '../src/image/React.png';
+// import tc from '../src/image/tailwindcss.png';
 import wa from '../src/image/whatsapp.png';
 import tl from '../src/image/telegram.png';
 import ig from '../src/image/instagram.png';
@@ -13,149 +13,133 @@ import gh from '../src/image/github.png';
 
 function App() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-slate-900 h-full">
       <div>
-        <nav className="md:container py-3 md:mx-auto mx-6 flex justify-between">
-          <div className="text-2xl font-black my-auto align-middle">AGUNG.</div>
-          <div className="md:flex md:space-x-10 text-lg">
-            <div className="font-bold hidden md:block hover:font-black my-auto align-middle">Home</div>
-            <div className="font-bold hidden md:block hover:font-black my-auto align-middle">Experience</div>
-            <div className="font-bold hidden md:block hover:font-black my-auto align-middle">Portofolio</div>
-            <button className="font-bold hidden md:block text-center border-2 rounded-full px-4 py-2 align-middle bg-slate-500 hover:bg-slate-300">Contact Us</button>
-            <div className="font-bold block md:hidden">
-              <Bars3Icon className="h-auto w-8"/>
+        <header className="md:container md:mx-auto mx-6">
+          <nav className="flex justify-between">
+            <div className="text-2xl font-black text-white my-auto align-middle">AGUNG.</div>
+            <ol className="md:flex md:space-x-10 text-lg">
+              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">About Me</li>
+              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Experience</li>
+              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Portofolio</li>
+              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Contact</li>
+              <li className="text-white font-bold hidden md:block">
+                <button className="text-center border-2 rounded-full px-4 py-2 align-middle bg-slate-500 hover:bg-slate-300">Resume</button>
+              </li>
+              <div className="block md:hidden"><Bars3Icon className="h-auto w-8"/></div>
+            </ol>
+          </nav>
+        </header>
+        <div className="flex justify-between md:w-full hidden">
+          <div className="fixed bottom-24 left-8">
+            <div className="md:my-8 my-4">
+              <a href="https://wa.me/6281215552690">
+                <img className="mx-auto md:w-8 w-4" src={wa} alt=""/></a></div>
+            <div className="md:my-8 my-4">
+              <a href="https://telegram.me/agungf97">
+                <img className="mx-auto md:w-8 w-4" src={tl} alt=""/></a>
+            </div>
+            <div className="md:my-8 my-4">
+              <a href="https://www.instagram.com/agungf97/">
+                <img className="mx-auto md:w-8 w-4" src={ig} alt=""/></a>
+            </div>
+            <div className="md:my-8 my-4">
+              <a href="https://www.linkedin.com/in/agungf97/">
+                  <img className="mx-auto md:w-8 w-4" src={lin} alt=""/></a>
+            </div>
+            <div className="md:my-8 my-4 bg-white rounded">
+              <a href="https://github.com/agungf97">
+                <img className="mx-auto md:w-8 w-4" src={gh} alt=""/></a>
             </div>
           </div>
-        </nav>
-        <div className="container md:mx-auto px-6 pb-10">
-          <div className="md:flex h-full">
-            <div className="md:w-1/2 md:py-0 pt-10 pb-8 my-auto align-middle">
-              <div className="md:text-2xl text-lg font-bold">Hai, my name is...</div>
-              <div className="py-3 md:text-6xl text-xl font-black"> Mohamad <span className="text-gray-500">Agung</span> Faisal</div>
-              <div className="py-2 md:text-lg text-sm">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</div>
-            </div>
-            <div className="md:w-1/2 mx-auto allign-center my-auto">
-              <img className="mx-auto md:w-3/4 w-1/2" src={fp} alt=""/>
-            </div>
-          </div>
-        </div>
-      </div>        
-      <div className="bg-slate-300">
-        <div className="container mx-auto py-8 px-6 h-full">
-            <div className="md:text-4xl text-lg font-semibold">About Me.</div>
-            <div className="py-3 mt-4 md:text-6xl text-xl font-bold">Why hire me in your company?</div>
-            <div className="py-2  mt-4 md:text-lg text-sm">I have 1 years experience work as developer. I make Mobile App using Android Studio nad make Web Landing Page using CodeIgniter. Now i learn more deeper about ReactJS and NextJS as a Frontend Developer. I create a lot of reusable components to support my work later on.</div>
-            <div className="py-2 md:text-lg text-sm">I believe with my ability and my hard work can bring the best results for the company. because I love code and I really like the challenge of getting things done.</div>
-            <button className="font-bold text-center border-4 border-slate-500 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
-                Learn More
-          </button>
-        </div>
-      </div>
-      <div className="container mx-auto py-10 px-6">
-        <div className="text-center mt-8 md:text-4xl text-xl font-bold mb-10">Skill's</div>
-        <div className="flex justify-between">
-          <div>
-            <img className="mx-auto md:w-1/2 w-1/4" src={ht} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              HTML
-            </div>
-          </div>
-          <div>
-            <img className="mx-auto md:w-1/2 w-1/4" src={cs} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              CSS 
-            </div>
-          </div>
-          <div>
-            <img className="mx-auto md:w-1/2 w-1/4" src={rj} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              ReactJS 
-            </div>
-          </div>
-          <div>
-            <img className="mx-auto md:w-1/2 w-1/4" src={tc} alt=""/>
-            <div className="text-center md:text-xl text-sm mt-2">
-              TailwindCSS 
-            </div>
+          <div className="bottom-64 -right-16 fixed rotate-90 font-moc text-xl text-white">
+            mohamadagungfaisal@gmail.com
           </div>
         </div>
-      </div>
-      <div className="mt-10 bg-slate-400">
-        <div className="container mx-auto py-10 px-6">
-          <div className="font-bold text-3xl text-center">My Experience</div>
-            <div className="md:flex md:flex-wrap justify-between mx-auto px-3">
-              <div className="mt-6">
-                <div className="text-xl font-bold">Kit Worker - <span className="font-semibold">Designer Graphic</span></div>
-                <div className="text-sm font-normal">2016-2017</div>
-                <ul>
-                  <li>Marketing the sale of curtains.</li>
-                  <li>Serving customers both online and offline.</li>
-                  <li>Create Decal Design according to customer's order.</li>
-                </ul>
+        <section className="text-white">
+          <div className="container mx-auto">
+            <div className="md:flex justify-between h-full">
+              <div className="md:my-32 my-16 md:px-24 px-16">
+                <h3 className="md:text-4xl text-lg font-bold">Hai, my name is...</h3>
+                <h1 className="py-4 md:text-6xl text-xl font-black"> Mohamad <span className="text-gray-500">Agung</span> Faisal</h1>
+                <p className="py-4 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
+                <button className="font-bold text-center border-4 border-slate-500 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
+                  Learn More
+                </button>
               </div>
-              <div className="mt-6">
-                <div className="text-xl font-bold">Aries Gorden - <span className="font-semibold">Employee</span></div>
-                <div className="text-sm font-normal">2017-2019</div>
-                <ul>
-                  <li>Marketing the sale of curtains.</li>
-                  <li>Making or sewing curtains according to the model ang ordered by customers.</li>
-                  <li>Delivering and installing curtains to customers' homes.</li>
-                </ul>
-              </div>
-              <div className="mt-6">
-                <div className="text-xl font-bold">JNE Turen - <span className="font-semibold">warehouse sorter</span></div>
-                <div className="text-sm font-normal">2020-2021</div>
-                <ul>
-                  <li>Sorter of arrival packages from Malang warehouse according to the delivery address..</li>
-                  <li>Prepare packages that must be sent by couriers according to the area of each courier..</li>
-                  <li>Handles packages that are late and fail to be delivered by couriers..</li>
-                </ul>
-              </div>
-              <div className="mt-6">
-                <div className="text-xl font-bold">Aries Gorden - <span className="font-semibold">Employee</span></div>
-                <div className="text-sm font-normal">2017-2019</div>
-                <ul>
-                  <li>Marketing the sale of curtains.</li>
-                  <li>Making or sewing curtains according to the model ang ordered by customers.</li>
-                  <li>Delivering and installing curtains to customers' homes.</li>
-                </ul>
-              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="container mx-auto py-10 px-6">
-        <div className="text-center font-bold text-3xl">Portofolio</div>
-        <div className="md:flex md:flex-wrap justify-around mt-8">
-          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-          <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-        </div>
-      </div>
-      <div className="container bg-gray-300 mx-auto py-10 px-6 w-30 h-auto">
-        <div className="text-center font-bold text-3xl">Contact Us</div>
-        <div className="flex justify-around mt-10">
-          <a href="https://wa.me/6281215552690">
-            <img className="mx-auto md:w-2/6 w-1/6" src={wa} alt=""/>
-            <div className="text-center mt-2">WhatsApp</div>
-          </a>
-          <a href="https://telegram.me/agungf97">
-            <img className="mx-auto md:w-2/6 w-1/6" src={tl} alt=""/>
-            <div className="text-center mt-2">Telegram</div>
-          </a>
-          <a href="https://www.instagram.com/agungf97/">
-            <img className="mx-auto md:w-2/6 w-1/6" src={ig} alt=""/>
-            <div className="text-center mt-2">Instagram</div>
-          </a>
-          <a href="https://www.linkedin.com/in/agungf97/">
-            <img className="mx-auto md:w-2/6 w-1/6" src={lin} alt=""/>
-            <div className="text-center mt-2">LinkedIn</div>
-          </a>
-          <a href="https://github.com/agungf97">
-            <img className="mx-auto md:w-2/6 w-1/6" src={gh} alt=""/>
-            <div className="text-center mt-2">Github</div>
-          </a>
-        </div>
+        </section> 
+        <section className="text-white">
+          <div className="container mx-auto md:my-32 my-16 md:px-24 px-16 h-full">
+            <h2 className="md:text-4xl text-lg font-semibold">About Me.</h2>
+            <h1 className="py-3 md:text-6xl text-xl font-bold">Why hire me in your company?</h1>
+            <p className="py-3 md:text-xl text-lg !leading-8">I have 1 years experience work as developer. I make Mobile App using Android Studio nad make Web Landing Page using CodeIgniter. Now i learn more deeper about ReactJS and NextJS as a Frontend Developer. I create a lot of reusable components to support my work later on. I believe with my ability and my hard work can bring the best results for the company. because I love code and I really like the challenge of getting things done.</p>
+          </div>
+        </section>
+        <section className="text-white">
+          <div className="container mx-auto my-32 py-10 px-8">
+            <div className="font-bold md:text-4xl text-lg text-center">My Experience</div>
+              <div className="flex flex-wrap justify-between mx-auto px-4">
+                <div className="mt-8">
+                  <div className="md:text-xl text-base font-bold">Kit Worker - <span className="font-semibold">Designer Graphic</span></div>
+                  <div className="md:text-lg text-sm font-normal">2016-2017</div>
+                  <ul className="md:text-lg text-sm font-normal">
+                    <li>Marketing the sale of curtains.</li>
+                    <li>Serving customers both online and offline.</li>
+                    <li>Create Decal Design according to customer's order.</li>
+                  </ul>
+                </div>
+                <div className="mt-8">
+                  <div className="md:text-xl text-base font-bold">Aries Gorden - <span className="font-semibold">Employee</span></div>
+                  <div className="md:text-lg text-sm font-normal">2017-2019</div>
+                  <ul className="md:text-lg text-sm font-normal">
+                    <li>Marketing the sale of curtains.</li>
+                    <li>Making or sewing curtains according to the model ang ordered by customers.</li>
+                    <li>Delivering and installing curtains to customers' homes.</li>
+                  </ul>
+                </div>
+                <div className="mt-8">
+                  <div className="md:text-xl text-base font-bold">JNE Turen - <span className="font-semibold">Warehouse Sorter</span></div>
+                  <div className="md:text-lg text-sm font-normal">2020-2021</div>
+                  <ul className="md:text-lg text-sm font-normal">
+                    <li>Sorter of arrival packages from Malang warehouse according to the delivery address..</li>
+                    <li>Prepare packages that must be sent by couriers according to the area of each courier..</li>
+                    <li>Handles packages that are late and fail to be delivered by couriers..</li>
+                  </ul>
+                </div>
+                <div className="mt-8">
+                  <div className="md:text-xl text-base font-bold">Aries Gorden - <span className="font-semibold">Employee</span></div>
+                  <div className="md:text-lg text-sm font-normal">2021-2022</div>
+                  <ul className="md:text-lg text-sm font-normal">
+                    <li>Marketing the sale of curtains.</li>
+                    <li>Making or sewing curtains according to the model ang ordered by customers.</li>
+                    <li>Delivering and installing curtains to customers' homes.</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section className="text-white">
+          <div className="container mx-auto my-32 px-8">
+            <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
+            <div className="flex flex-wrap justify-between mt-4">
+              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+            </div>
+          </div>
+        </section>
+        <section className="text-white">
+          <div className="container mx-auto">
+            <div className="md:mx-44 mx-auto text-center">
+              <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
+              <p className="text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+              <button className="text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
