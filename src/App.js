@@ -64,7 +64,7 @@ function App() {
                 </button>
               </div>
               <div className="md:my-32 my-16 md:px-24 px-16">
-                <img className="w-full" src={fp} alt=""/>
+                <img className="md:w-full" src={fp} alt=""/>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ function App() {
         <section className="container mx-auto text-white">
           <div className="md:my-32 my-16 md:px-24 px-16">
             <div className="font-bold md:text-4xl text-lg text-center">My Experience</div>
-              <div className="md:grid grid-cols-2 gap-2">
+              <div className="md:grid grid-cols-2 gap-4">
                 <div className="mt-8">
                   <div className="md:text-xl text-base font-bold">Kit Worker - <span className="font-semibold">Designer Graphic</span></div>
                   <div className="md:text-lg text-sm font-normal">2016-2017</div>
@@ -147,13 +147,18 @@ function App() {
         </section>
         <section className="text-white">
           <div className="container mx-auto">
-            <div className="md:mx-44 mx-auto text-center">
+            <div className="md:mx-48 md:my-32 mx-auto text-center">
               <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
               <p className="text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
               <button className="text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
             </div>
           </div>
         </section>
+        <footer className="text-white">
+          <div className="container">
+            <div className="italic text-center font-thin">© Copyright 2023. Made by <span className="text-sky-500">Mohamad Agung Faisal</span></div>
+          </div>
+        </footer>
       </div>
     </div>
   );
