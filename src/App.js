@@ -73,9 +73,9 @@ function App() {
           <div className="md:grid grid-cols-2 gap-2">
             <div className="md:my-32 my-16 md:px-24 px-16">
               <h2 className="md:text-4xl text-lg font-semibold">About Me.</h2>
-              <p className="py-6 md:text-xl text-lg">Hi! My name is Mohamad Agung Faisal, I am a Frontend Web Developer who builds Front-end Websites and Web Applications that lead to overall product success.</p>
-              <p className="py-6 md:text-xl text-lg">I also like to share content related to things I've learned from my years in Web Development so it can help others in the Developer Community.</p>
-              <p className="py-6 md:text-xl text-lg">I am open to job opportunities where I can contribute, learn and develop. If you have a good opportunity that matches my skills and experience, please don't hesitate to contact me.</p>
+              <p className="py-6 md:text-xl text-lg !leading-8">Hi! My name is Mohamad Agung Faisal, I am a Frontend Web Developer who builds Front-end Websites and Web Applications that lead to overall product success.</p>
+              <p className="py-6 md:text-xl text-lg !leading-8">I also like to share content related to things I've learned from my years in Web Development so it can help others in the Developer Community.</p>
+              <p className="py-6 md:text-xl text-lg !leading-8">I am open to job opportunities where I can contribute, learn and develop. If you have a good opportunity that matches my skills and experience, please don't hesitate to contact me.</p>
             </div>
             <div className="md:my-32 my-16 md:px-24 px-16">
               <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
@@ -149,8 +149,8 @@ function App() {
           <div className="container mx-auto">
             <div className="md:mx-48 md:my-32 mx-auto text-center">
               <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
-              <p className="text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-              <button className="text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
+              <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+              <button className="mt-8 text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
             </div>
           </div>
         </section>
