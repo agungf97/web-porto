@@ -26,30 +26,25 @@ function App() {
             </ol>
           </nav>
         </header>
-        <div className="md:flex justify-between md:w-full hidden">
-          <div className="fixed bottom-16 border-none-2 rounded-lg bg-slate-800 px-4">
-            <div className="my-6">
-              <a href="https://wa.me/6281215552690">
-                <img className="mx-auto w-8" src={wa} alt=""/></a></div>
-            <div className="my-6">
-              <a href="https://telegram.me/agungf97">
-                <img className="mx-auto w-8" src={tl} alt=""/></a>
-            </div>
-            <div className="my-6">
-              <a href="https://www.instagram.com/agungf97/">
-                <img className="mx-auto w-8" src={ig} alt=""/></a>
-            </div>
-            <div className="my-6">
-              <a href="https://www.linkedin.com/in/agungf97/">
-                  <img className="mx-auto w-8" src={lin} alt=""/></a>
-            </div>
-            <div className="my-6">
-              <a href="https://github.com/agungf97">
-                <img className="mx-auto w-8" src={gh} alt=""/></a>
-            </div>
+        <div className="fixed bottom-16 border-none-2 rounded-lg bg-slate-800 px-4 md:block hidden">
+          <div className="my-6">
+            <a href="https://wa.me/6281215552690">
+              <img className="mx-auto w-8" src={wa} alt=""/></a></div>
+          <div className="my-6">
+            <a href="https://telegram.me/agungf97">
+              <img className="mx-auto w-8" src={tl} alt=""/></a>
           </div>
-          <div className="bottom-48 -right-24 fixed rotate-90 font-moc text-xl text-white">
-            mohamadagungfaisal@gmail.com
+          <div className="my-6">
+            <a href="https://www.instagram.com/agungf97/">
+              <img className="mx-auto w-8" src={ig} alt=""/></a>
+          </div>
+          <div className="my-6">
+            <a href="https://www.linkedin.com/in/agungf97/">
+                <img className="mx-auto w-8" src={lin} alt=""/></a>
+          </div>
+          <div className="my-6">
+            <a href="https://github.com/agungf97">
+              <img className="mx-auto w-8" src={gh} alt=""/></a>
           </div>
         </div>
         <section className="text-white">
@@ -57,8 +52,8 @@ function App() {
             <div className="md:flex justify-between h-full">
               <div className="md:my-32 my-16 md:px-24 px-16">
                 <h2 className="md:text-4xl text-lg font-bold">Hai, my name is...</h2>
-                <h1 className="py-4 md:text-6xl text-xl font-black"> Mohamad <span className="text-gray-500">Agung</span> Faisal</h1>
-                <p className="py-4 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
+                <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black"> Mohamad <span className="text-gray-500">Agung</span> Faisal</h1>
+                <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
                 <button className="font-bold text-center border-4 border-slate-500 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
                   Learn More
                 </button>
@@ -79,14 +74,16 @@ function App() {
             </div>
             <div className="md:my-32 my-16 md:px-24 px-16">
               <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
-              <div className="flex flex-wrap space-y-2 space-x-4 text-xl pt-6 text-center">
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">HTML</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">CSS</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">React</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">Tailwind</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">JavaScript</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">CorelDraw</div>
-                <div className="border-none-2 rounded-lg bg-slate-800 px-4 py-2">Adobe Photoshop</div>
+              <div className="text-xl pt-6 text-center">
+                <div className="flex flex-wrap">
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">HTML</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">CSS</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">React</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">Tailwind</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">JavaScript</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">CorelDraw</div>
+                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">Adobe Photoshop</div>
+                </div>
               </div>
             </div>
           </div>
@@ -147,16 +144,16 @@ function App() {
         </section>
         <section className="text-white">
           <div className="container mx-auto">
-            <div className="md:mx-48 md:my-32 mx-auto text-center">
+            <div className="md:my-32 md:px-48 px-16 my-16 mx-auto text-center">
               <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
               <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
               <button className="mt-8 text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
             </div>
           </div>
         </section>
-        <footer className="text-white">
-          <div className="container">
-            <div className="italic text-center font-thin">© Copyright 2023. Made by <span className="text-sky-500">Mohamad Agung Faisal</span></div>
+        <footer class="text-center lg:text-left">
+          <div class="text-white text-center p-4">
+            © 2023 Copyright: Mohamad Agung Faisal
           </div>
         </footer>
       </div>
