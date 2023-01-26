@@ -1,5 +1,6 @@
 import './App.css';
 import { Bars3Icon } from '@heroicons/react/24/solid';
+import lg from '../src/image/logo.png';
 import fp from '../src/image/fp.png';
 import wa from '../src/image/whatsapp.png';
 import tl from '../src/image/telegram.png';
@@ -9,62 +10,61 @@ import gh from '../src/image/github.png';
 
 function App() {
   return (
-    <div className="bg-slate-900 h-full">
+    <div className="h-full">
       <div>
-        <header className="md:container md:mx-auto mx-6">
-          <nav className="flex justify-between pt-4">
-            <div className="text-2xl font-black text-white my-auto align-middle">AGUNG.</div>
+        <header>
+          <nav className="flex justify-between md:px-24 py-2">
+            <div className="flex justify-between group-hover:text-cyan-300">
+              <div><img className="w-8" src={lg} alt=""/></div>
+              <span className="align-middle pl-2 text-2xl font-extrabold hover:font-black hover:text-cyan-300">AGUNG.</span>
+            </div>
             <ol className="md:flex md:space-x-8 text-base">
-              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">About Me</li>
-              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Experience</li>
-              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Portofolio</li>
-              <li className="text-white font-bold hidden md:block hover:font-black my-auto align-middle">Contact</li>
-              <li className="text-white font-bold hidden md:block">
-                <button className="text-center border-2 rounded-full px-6 align-middle bg-slate-500 hover:bg-slate-300">Resume</button>
-              </li>
+              <li className="font-bold hidden md:block hover:font-extrabold hover:text-cyan-300 my-auto align-middle">About Me</li>
+              <li className="font-bold hidden md:block hover:font-extrabold hover:text-cyan-300 my-auto align-middle">Experience</li>
+              <li className="font-bold hidden md:block hover:font-extrabold hover:text-cyan-300 my-auto align-middle">Portofolio</li>
+              <li className="font-bold hidden md:block hover:font-extrabold hover:text-cyan-300 my-auto align-middle">Contact</li>
+                <button className="text-center font-bold hidden md:block border-4 rounded-full px-6 align-middle border-cyan-300 hover:bg-cyan-300 duration-500">Resume</button>
               <div className="block md:hidden"><Bars3Icon className="h-auto w-8"/></div>
             </ol>
           </nav>
         </header>
-        <div className="fixed bottom-16 border-none-2 rounded-lg bg-slate-800 px-4 md:block hidden">
+        <div className="fixed bottom-24 border-none-2 rounded-lg px-2 hover:-translate-y-2 bg-slate-300 opacity-50 hover:opacity-100 duration-500 md:block hidden">
           <div className="my-6">
             <a href="https://wa.me/6281215552690">
-              <img className="mx-auto w-8" src={wa} alt=""/></a></div>
+              <img className="mx-auto w-6 hover:w-8 duration-150" src={wa} alt=""/></a></div>
           <div className="my-6">
             <a href="https://telegram.me/agungf97">
-              <img className="mx-auto w-8" src={tl} alt=""/></a>
+              <img className="mx-auto w-6 hover:w-8 duration-150" src={tl} alt=""/></a>
           </div>
           <div className="my-6">
             <a href="https://www.instagram.com/agungf97/">
-              <img className="mx-auto w-8" src={ig} alt=""/></a>
+              <img className="mx-auto w-6 hover:w-8 duration-150" src={ig} alt=""/></a>
           </div>
           <div className="my-6">
             <a href="https://www.linkedin.com/in/agungf97/">
-                <img className="mx-auto w-8" src={lin} alt=""/></a>
+                <img className="mx-auto w-6 hover:w-8 duration-150" src={lin} alt=""/></a>
           </div>
           <div className="my-6">
             <a href="https://github.com/agungf97">
-              <img className="mx-auto w-8" src={gh} alt=""/></a>
+              <img className="mx-auto w-6 hover:w-8 duration-150" src={gh} alt=""/></a>
           </div>
         </div>
-        <section className="text-white">
-          <div className="container mx-auto">
-            <div className="md:flex justify-between h-full">
-              <div className="md:my-32 my-16 md:px-24 px-16">
-                <h2 className="md:text-4xl text-lg font-bold">Hai, my name is...</h2>
-                <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black"> Mohamad <span className="text-gray-500">Agung</span> Faisal</h1>
-                <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
-                <button className="font-bold text-center border-4 border-slate-500 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
-                  Learn More
-                </button>
-              </div>
-              <div className="md:my-32 my-16 md:px-24 px-16">
-                <img className="md:w-full" src={fp} alt=""/>
-              </div>
+        <section className="container mx-auto">
+          <div className="md:flex justify-between">
+            <div className="md:my-32 my-16 md:px-24 px-16">
+              <h2 className="md:text-4xl text-lg font-bold">Hai, my name is...</h2>
+              <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black"> Mohamad <span className="text-cyan-300">Agung</span> Faisal</h1>
+              <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
+              <button className="font-bold hover:-translate-y-2 duration-500 text-center border-none bg-cyan-300 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
+                Learn More
+              </button>
+            </div>
+            <div className="md:my-32 my-16 md:px-24 px-16">
+              <img className="md:w-full" src={fp} alt=""/>
             </div>
           </div>
         </section> 
-        <section className="container mx-auto text-white">
+        <section className="container mx-auto">
           <div className="md:grid grid-cols-2 gap-2">
             <div className="md:my-32 my-16 md:px-24 px-16">
               <h2 className="md:text-4xl text-lg font-semibold">About Me.</h2>
@@ -76,19 +76,19 @@ function App() {
               <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
               <div className="text-xl pt-6 text-center">
                 <div className="flex flex-wrap">
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">HTML</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">CSS</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">React</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">Tailwind</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">JavaScript</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">CorelDraw</div>
-                  <div className="border-none rounded-lg bg-slate-800 px-4 py-2 mx-2 my-2">Adobe Photoshop</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">HTML</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CSS</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">React</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Tailwind</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">JavaScript</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CorelDraw</div>
+                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Adobe Photoshop</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="container mx-auto text-white">
+        <section className="container mx-auto">
           <div className="md:my-32 my-16 md:px-24 px-16">
             <div className="font-bold md:text-4xl text-lg text-center">My Experience</div>
               <div className="md:grid grid-cols-2 gap-4">
@@ -131,28 +131,38 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="container mx-auto text-white">
-          <div className="md:my-32 my-16 md:px-24 px-16">
+        <section className="container mx-auto">
+          <div className="md:my-32 my-16 md:px-32 px-16">
             <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
             <div className="flex flex-wrap justify-between mt-8">
-              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
-              <a href="https://github.com/agungf97?tab=repositories" class="text-blue-600 visited:text-purple-600 ...">Inspiration</a>
+              <a href="https://github.com/agungf97?tab=repositories">
+                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="text-center mt-4">Portofolio 1</div>
+              </a>
+              <a href="https://github.com/agungf97?tab=repositories">
+                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="text-center mt-4">Portofolio 2</div>
+              </a>
+              <a href="https://github.com/agungf97?tab=repositories">
+                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="text-center mt-4">Portofolio 3</div>
+              </a>
+              <a href="https://github.com/agungf97?tab=repositories">
+                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="text-center mt-4">Portofolio 4</div>
+              </a>
             </div>
           </div>
         </section>
-        <section className="text-white">
-          <div className="container mx-auto">
-            <div className="md:my-32 md:px-48 px-16 my-16 mx-auto text-center">
-              <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
-              <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-              <button className="mt-8 text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-slate-500 hover:bg-slate-300"> Say Hello</button>
-            </div>
+        <section className="container mx-auto">
+          <div className="md:my-32 md:px-48 px-16 my-16 mx-auto text-center">
+            <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
+            <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+            <button className="mt-8 text-center border-2 rounded-lg px-4 py-2 top-4 align-middle bg-cyan-300 hover:-translate-y-2 duration-500"> Say Hello</button>
           </div>
         </section>
-        <footer class="text-center lg:text-left">
-          <div class="text-white text-center p-4">
+        <footer>
+          <div class="text-center">
             © 2023 Copyright: Mohamad Agung Faisal
           </div>
         </footer>

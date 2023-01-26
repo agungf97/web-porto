@@ -5,7 +5,11 @@ module.exports = {
     fontFamily:{
       'moc':['Mochiy Pop P One'], 
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'ta': "url('../src/image/triangle.png')"
+      }
+    },
   },
   plugins: [],
 }
