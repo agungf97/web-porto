@@ -136,19 +136,19 @@ function App() {
             <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
             <div className="flex flex-wrap justify-between mt-8">
               <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
                 <div className="text-center mt-4">Portofolio 1</div>
               </a>
               <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
                 <div className="text-center mt-4">Portofolio 2</div>
               </a>
               <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
                 <div className="text-center mt-4">Portofolio 3</div>
               </a>
               <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4"></div>
+                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
                 <div className="text-center mt-4">Portofolio 4</div>
               </a>
             </div>
