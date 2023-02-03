@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="h-full">
       <div>
-        <header>
+        <header className="bg-slate-200">
           <nav className="flex justify-between md:px-24 py-2">
             <div className="flex justify-between group-hover:text-cyan-300">
               <div><img className="w-8" src={lg} alt=""/></div>
@@ -49,40 +49,44 @@ function App() {
               <img className="mx-auto w-6 hover:w-8 duration-150" src={gh} alt=""/></a>
           </div>
         </div>
-        <section className="container mx-auto">
-          <div className="md:flex justify-between">
-            <div className="md:my-32 my-16 md:px-24 px-16">
-              <h2 className="md:text-4xl text-lg font-bold">Hai, my name is...</h2>
-              <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black"> Mohamad <span className="text-cyan-300">Agung</span> Faisal</h1>
-              <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
-              <button className="font-bold hover:-translate-y-2 duration-500 text-center border-none bg-cyan-300 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
-                Learn More
-              </button>
-            </div>
-            <div className="md:my-32 my-16 md:px-24 px-16">
-              <img className="md:w-full" src={fp} alt=""/>
+        <section>
+          <div className="container mx-auto">
+            <div className="md:flex justify-between">
+              <div className="md:my-32 my-16 md:px-24 px-16">
+                <h2 className="md:text-4xl text-lg font-bold">Hai, my name is...</h2>
+                <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black"> Mohamad <span className="text-cyan-300">Agung</span> Faisal</h1>
+                <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
+                <button className="font-bold hover:-translate-y-2 duration-500 text-center border-none bg-cyan-300 md:w-auto w-full rounded-lg px-4 py-2 mt-10">
+                  Learn More
+                </button>
+              </div>
+              <div className="md:my-32 my-16 md:px-24 px-16">
+                <img className="md:w-full" src={fp} alt=""/>
+              </div>
             </div>
           </div>
         </section> 
-        <section className="container mx-auto">
-          <div className="md:grid grid-cols-2 gap-2">
-            <div className="md:my-32 my-16 md:px-24 px-16">
-              <h2 className="md:text-4xl text-lg font-semibold">About Me.</h2>
-              <p className="py-6 md:text-xl text-lg !leading-8">Hi! My name is Mohamad Agung Faisal, I am a Frontend Web Developer who builds Front-end Websites and Web Applications that lead to overall product success.</p>
-              <p className="py-6 md:text-xl text-lg !leading-8">I also like to share content related to things I've learned from my years in Web Development so it can help others in the Developer Community.</p>
-              <p className="py-6 md:text-xl text-lg !leading-8">I am open to job opportunities where I can contribute, learn and develop. If you have a good opportunity that matches my skills and experience, please don't hesitate to contact me.</p>
-            </div>
-            <div className="md:my-32 my-16 md:px-24 px-16">
-              <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
-              <div className="text-xl pt-6 text-center">
-                <div className="flex flex-wrap">
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">HTML</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CSS</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">React</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Tailwind</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">JavaScript</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CorelDraw</div>
-                  <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Adobe Photoshop</div>
+        <section className="bg-slate-200 h-full">
+          <div className="container mx-auto">
+            <div className="md:grid grid-cols-2 gap-2">
+              <div className="md:my-32 my-16 md:px-24 px-16">
+                <h2 className="md:text-4xl text-lg font-semibold">About Me.</h2>
+                <p className="py-6 md:text-xl text-lg !leading-8">Hi! My name is Mohamad Agung Faisal, I am a Frontend Web Developer who builds Front-end Websites and Web Applications that lead to overall product success.</p>
+                <p className="py-6 md:text-xl text-lg !leading-8">I also like to share content related to things I've learned from my years in Web Development so it can help others in the Developer Community.</p>
+                <p className="py-6 md:text-xl text-lg !leading-8">I am open to job opportunities where I can contribute, learn and develop. If you have a good opportunity that matches my skills and experience, please don't hesitate to contact me.</p>
+              </div>
+              <div className="md:my-32 my-16 md:px-24 px-16">
+                <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
+                <div className="text-xl pt-6 text-center">
+                  <div className="flex flex-wrap">
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">HTML</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CSS</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">React</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Tailwind</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">JavaScript</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CorelDraw</div>
+                    <div className="border-none rounded-lg bg-cyan-300 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">Adobe Photoshop</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,26 +135,28 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="container mx-auto">
-          <div className="md:my-32 my-16 md:px-32 px-16">
-            <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
-            <div className="flex flex-wrap justify-between mt-8">
-              <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
-                <div className="text-center mt-4">Portofolio 1</div>
-              </a>
-              <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
-                <div className="text-center mt-4">Portofolio 2</div>
-              </a>
-              <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
-                <div className="text-center mt-4">Portofolio 3</div>
-              </a>
-              <a href="https://github.com/agungf97?tab=repositories">
-                <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
-                <div className="text-center mt-4">Portofolio 4</div>
-              </a>
+        <section className="bg-cyan-300">
+          <div className="container mx-auto">
+            <div className="md:my-32 my-16 md:px-32 px-16">
+              <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
+              <div className="flex flex-wrap justify-between mt-8">
+                <a href="https://github.com/agungf97?tab=repositories">
+                  <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
+                  <div className="text-center mt-4">Portofolio 1</div>
+                </a>
+                <a href="https://github.com/agungf97?tab=repositories">
+                  <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
+                  <div className="text-center mt-4">Portofolio 2</div>
+                </a>
+                <a href="https://github.com/agungf97?tab=repositories">
+                  <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
+                  <div className="text-center mt-4">Portofolio 3</div>
+                </a>
+                <a href="https://github.com/agungf97?tab=repositories">
+                  <div className="box-border h-56 w-56 p-4 border-4 hover:-translate-y-2 duration-500"></div>
+                  <div className="text-center mt-4">Portofolio 4</div>
+                </a>
+              </div>
             </div>
           </div>
         </section>
