@@ -1,68 +1,68 @@
 import './App.css';
-import { Bars3Icon } from '@heroicons/react/24/solid';
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillSunFill } from 'react-icons/bs';
 import { useState } from "react";
-import maf from '../src/image/maf.png';
 import fp from '../src/image/fotodiri.png';
 import wa from '../src/image/whatsapp.png';
 import tl from '../src/image/telegram.png';
 import ig from '../src/image/instagram.png';
 import lin from '../src/image/linkedin.png';
 import gh from '../src/image/github.png';
+import Header from './components/header/navbar.js';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="fixed bottom-80 border-none-2 rounded-lg px-2 hover:-translate-y-2 bg-slate-300 opacity-50 hover:opacity-100 duration-500 md:block hidden">
-        <div className="my-6">
-          <a href="https://wa.me/6281215552690">
-            <img className="mx-auto w-6 hover:w-8 duration-150" src={wa} alt=""/>
-          </a>
-        </div>
-        <div className="my-6">
-          <a href="https://telegram.me/agungf97">
-            <img className="mx-auto w-6 hover:w-8 duration-150" src={tl} alt=""/>
-          </a>
-        </div>
-        <div className="my-6">
-          <a href="https://www.instagram.com/agungf97/">
-            <img className="mx-auto w-6 hover:w-8 duration-150" src={ig} alt=""/>
-          </a>
-        </div>
-        <div className="my-6">
-          <a href="https://www.linkedin.com/in/agungf97/">
-              <img className="mx-auto w-6 hover:w-8 duration-150" src={lin} alt=""/>
-          </a>
-        </div>
-        <div className="my-6">
-          <a href="https://github.com/agungf97">
-            <img className="mx-auto w-6 hover:w-8 duration-150" src={gh} alt=""/>
-          </a>
-        </div>
-      </div>
-      <main className=" bg-white px-10 dark:bg-slate-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          <nav className="flex justify-between md:px-16 px-2 py-2 dark:text-white">
-            <div>
-              <img className="w-24 hover:scale-100 hover:opacity-90" src={maf} alt=""/>
+      <main className="dark:bg-slate-900">
+        <Header/>
+        <div className="container">
+          <div className="flex justify-between dark:text-white">
+            <div className="fixed bottom-56 border-none-2 rounded-lg px-2 hover:-translate-y-2 bg-slate-300 opacity-50 hover:opacity-100 duration-500 md:block hidden">
+              <div className="my-6">
+                <a href="https://wa.me/6281215552690">
+                  <img className="mx-auto w-6 hover:w-8 duration-150" src={wa} alt=""/>
+                </a>
+              </div>
+              <div className="my-6">
+                <a href="https://telegram.me/agungf97">
+                  <img className="mx-auto w-6 hover:w-8 duration-150" src={tl} alt=""/>
+                </a>
+              </div>
+              <div className="my-6">
+                <a href="https://www.instagram.com/agungf97/">
+                  <img className="mx-auto w-6 hover:w-8 duration-150" src={ig} alt=""/>
+                </a>
+              </div>
+              <div className="my-6">
+                <a href="https://www.linkedin.com/in/agungf97/">
+                    <img className="mx-auto w-6 hover:w-8 duration-150" src={lin} alt=""/>
+                </a>
+              </div>
+              <div className="my-6">
+                <a href="https://github.com/agungf97">
+                  <img className="mx-auto w-6 hover:w-8 duration-150" src={gh} alt=""/>
+                </a>
+              </div>
             </div>
-            <ol className="md:flex md:space-x-8 text-xl">
-              <li className="font-bold hidden md:block hover:font-semibold my-auto align-middle">
+            <div className="fixed bottom-80 hover:-translate-y-2 duration-500 md:block hidden right-8">
+              <div className="font-bold hidden md:block hover:font-semibold my-auto align-middle">
+                {!darkMode ? 
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className=" cursor-pointer text-2xl"/>
-              </li>
-              <li className="font-bold hidden md:block hover:font-semibold my-auto align-middle">About Me</li>
-              <li className="font-bold hidden md:block hover:font-semibold my-auto align-middle">Experience</li>
-              <li className="font-bold hidden md:block hover:font-semibold my-auto align-middle">Portofolio</li>
-              <li className="font-bold hidden md:block hover:font-semibold my-auto align-middle">Contact</li>
-                <button className="text-center font-bold hidden md:block border-4 rounded-full px-6 align-middle border-orange-500 dark:border-orange-700 hover:border-orange-700 hover:text-white hover:bg-orange-700 duration-500">Resume</button>
-                <div className="block md:hidden"><Bars3Icon className="h-auto w-8"/></div>
-            </ol>
-          </nav>
+                    className="cursor-pointer text-2xl"/>
+                    : <BsFillSunFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"/>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
           <div className="container mx-auto align-middle">
-            <div className="md:my-36 my-16 md:px-80 px-16 text-center dark:text-white">
+            <div className="md:my-36 md:px-80 px-16 text-center dark:text-white">
               <h2 className="md:text-4xl text-lg font-bold ">Hai, my name is...</h2>
               <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black hover:-translate-y-2 duration-500"> Mohamad <span className="text-orange-600">Agung</span> Faisal</h1>
               <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
