@@ -62,7 +62,7 @@ function App() {
         </div>
         <section>
           <div className="container mx-auto align-middle">
-            <div className="md:my-36 md:px-80 px-16 text-center dark:text-white">
+            <div className="md:my-32 md:px-80 px-16 text-center dark:text-white">
               <h2 className="md:text-4xl text-lg font-bold ">Hai, my name is...</h2>
               <h1 className="md:py-4 py-2 md:text-6xl text-xl font-black hover:-translate-y-2 duration-500"> Mohamad <span className="text-orange-600">Agung</span> Faisal</h1>
               <p className="md:py-4 py-2 md:text-xl text-lg !leading-8">My nickname is "Agung", I graduated from high school majoring in social studies in 2015. I have several skills such as using Microsoft Office, CorelDraw Graphic and Adobe Photoshop.</p>
@@ -100,7 +100,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="container mx-auto align-middle">
+          <div className="container mx-auto">
             <div className="md:my-32 my-16 md:px-24 px-16 dark:text-white">
               <div className="font-bold md:text-4xl text-lg text-center">My Experience</div>
                 <div className="md:grid grid-cols-2 gap-4">
@@ -143,9 +143,9 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="container mx-auto align-middle">
-          <div className="md:my-32 my-16 md:px-32 px-16 dark:text-white">
-            <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
+          <div className="container mx-auto dark:bg-orange-700">
+            <div className="md:my-32 my-16 md:px-24 px-16 dark:text-white">
+              <div className="text-center font-bold md:text-4xl text-lg">Portofolio</div>
               <div className="flex flex-wrap justify-between mt-8">
                 <a href="https://github.com/agungf97?tab=repositories">
                   <div className="box-border h-56 w-56 p-4 border-4 hover:h-80 hover:w-80 duration-500"></div>
@@ -166,13 +166,13 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="container mx-auto align-middle">
-            <div className="md:my-32 md:px-48 px-16 my-16 mx-auto text-center dark:text-white">
-              <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
-              <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-              <button className="mt-8 text-center text-xl border-2 rounded-lg px-4 py-2 top-4 align-middle dark:bg-orange-700 bg-orange-500 hover:-translate-y-2 duration-500"> Say Hello</button>
+            <div className="container mx-auto align-middle">
+              <div className="md:my-32 md:px-48 px-16 my-16 mx-auto text-center dark:text-white">
+                <div className="text-center font-bold md:text-4xl text-xl">Get In Touch</div>
+                <p className="mt-8 text-center md:text-lg text-sm !leading-8 top-4">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                <button className="mt-8 text-center text-xl border-2 rounded-lg px-4 py-2 top-4 align-middle dark:bg-orange-700 bg-orange-500 hover:-translate-y-2 duration-500"> Say Hello</button>
+              </div>
             </div>
-          </div>
           <footer>
             <div class="text-center dark:text-white">
               © 2023 Copyright: Mohamad Agung Faisal
