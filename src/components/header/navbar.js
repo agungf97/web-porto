@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import maf from '../../image/maf.png';
 
