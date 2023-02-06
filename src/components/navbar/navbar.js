@@ -4,14 +4,14 @@ import maf from '../../image/maf.png';
 
 const Navbar = () => {
     return (
-        <div className='fixed w-full py-4 bg-white dark:text-white dark:bg-slate-900'>
+        <div className='fixed w-full py-4 bg-white dark:text-white dark:bg-slate-900 align-middle'>
             <nav className="container mx-auto">
                 <div className="flex justify-between md:px-16 px-8">
                     <div>
                         <img className="w-24 hover:scale-100 hover:opacity-90" src={maf} alt=""/>
                     </div>
                     <div>
-                        <ol className="md:flex md:space-x-8 text-lg">
+                        <ol className="md:flex md:space-x-8 text-md">
                             <li className="hidden md:block hover:font-semibold my-auto align-middle">About Me</li>
                             <li className="hidden md:block hover:font-semibold my-auto align-middle">Experience</li>
                             <li className="hidden md:block hover:font-semibold my-auto align-middle">Portofolio</li>
