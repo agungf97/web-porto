@@ -2,14 +2,14 @@ import './App.css';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from 'react-icons/bs';
 import { useState } from "react";
-import Header from './components/header/navbar.js';
-import Home from './components/home/home.js';
-import About from './components/about/about.js';
-import Experience from './components/experience/experience.js';
-import Portofolio from './components/portofolio/portofolio.js';
-import Contact from './components/contact/contact.js';
-import Footer from './components/footer/footer.js';
-import Sosmed from './components/sosmed/sosmed.js';
+import Header from './components/navbar.js';
+import Home from './components/home.js';
+import About from './components/about.js';
+import Experience from './components/experience.js';
+import Portofolio from './components/portofolio.js';
+import Contact from './components/contact.js';
+import Footer from './components/footer.js';
+import Sosmed from './components/sosmed.js';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
