@@ -5,7 +5,7 @@ const About = () => {
         <div className="container mx-auto bg-slate-200 dark:bg-slate-800">
             <div className="md:grid grid-cols-2 gap-2 dark:text-white my-8">
               <div className="py-8 md:px-24 px-16 text-center">
-                <div className="pt-6">
+                <div>
                   <h2 className="md:text-4xl text-xl font-black">About Me.</h2>
                   <p className="py-6 md:text-xl text-lg !leading-8">Hi! My name is Mohamad Agung Faisal, I am a Frontend Web Developer who builds Front-end Websites and Web Applications that lead to overall product success.</p>
                   <p className="py-6 md:text-xl text-lg !leading-8">I also like to share content related to things I've learned from my years in Web Development so it can help others in the Developer Community.</p>
