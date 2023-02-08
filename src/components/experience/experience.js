@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <div className="container mx-auto">
             <div className="md:my-32 my-16 md:px-24 px-16 dark:text-white">
-              <div className="font-bold md:text-4xl text-lg text-center">My Experience</div>
+              <div className="font-black md:text-4xl text-2xl text-center">My Experience</div>
                 <div className="md:grid grid-cols-2 gap-4">
                   <div className="mt-8">
                     <div className="md:text-xl text-base font-bold">Kit Worker - <span className="font-semibold">Designer Graphic</span></div>
