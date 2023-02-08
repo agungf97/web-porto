@@ -15,7 +15,7 @@ const About = () => {
               <div className="md:my-32 my-16 md:px-24 px-16">
                 <h2 className="md:text-4xl text-lg font-semibold">My Skills</h2>
                 <div className="text-xl pt-6 text-center">
-                  <div className="flex flex-wrap">
+                  <div className="flex flex-wrap cursor-default">
                     <div className="border-none rounded-lg dark:bg-orange-700 bg-orange-500 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">HTML</div>
                     <div className="border-none rounded-lg dark:bg-orange-700 bg-orange-500 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">CSS</div>
                     <div className="border-none rounded-lg dark:bg-orange-700 bg-orange-500 hover:-translate-y-2 duration-500 px-4 py-2 mx-2 my-2">React</div>
