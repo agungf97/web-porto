@@ -17,7 +17,7 @@ import maf from '../../image/maf.png';
             <div>
                 <img onClick={() => handleScrool('home')} className="w-24 mx-4 hover:scale-100 hover:opacity-90" src={maf} alt=""></img>
             </div>
-            <div className="md:block mx-8 my-4 hover:font-semibold my-auto align-middle">
+            <div className="md:block pt-4 mx-8 my-4 hover:font-semibold my-auto align-middle">
                 <a onClick={() => handleScrool('about')}>About Me</a>
             </div>
             <div className="md:block mx-8 my-4 hover:font-semibold my-auto align-middle">
@@ -30,7 +30,7 @@ import maf from '../../image/maf.png';
                 <a onClick={() => handleScrool('contact')}>Contact</a>
             </div>
             <div className="fixed w-full inset-x-0 bottom-0 px-4 mb-4">
-                <button className="text-center w-full font-bold md:block border-4 rounded-full px-6 align-middle border-orange-500 dark:border-orange-700 hover:border-orange-700 hover:text-white hover:bg-orange-700 duration-500">Resume</button>
+                <button className="text-center w-full font-bold md:block border-4 rounded-xl px-6 align-middle border-orange-500 dark:border-orange-700 hover:border-orange-700 hover:text-white hover:bg-orange-700 duration-500">Resume</button>
             </div>
           </div>
         </nav>
