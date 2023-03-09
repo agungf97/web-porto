@@ -3,7 +3,7 @@ import fp from '../../image/fotodiri.png';
 
 const Home = () => {
     return (
-        <div className="container mx-auto align-middle">
+        <div id="home" className="container mx-auto align-middle">
             <div className="md:my-32 my-24 md:px-80 px-16 text-center dark:text-white">
               <h2 className="md:text-2xl text-lg font-bold ">Hai, my name is...</h2>
               <h1 className="md:py-4 py-2 md:text-4xl text-xl cursor-default font-black hover:-translate-y-2 duration-500"> Mohamad <span className="text-orange-600 md:text-6xl">Agung</span> Faisal</h1>

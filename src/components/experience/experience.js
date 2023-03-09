@@ -2,8 +2,8 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <div className="container mx-auto">
-            <div className="md:my-32 my-16 md:px-24 px-16 dark:text-white">
+        <div id="experience" className="container mx-auto">
+            <div className="md:my-32 my-16 pt-16 pb-16 md:px-24 px-16 dark:text-white">
               <div className="font-black md:text-4xl text-2xl text-center">My Experience</div>
                 <div className="md:grid grid-cols-2 gap-4">
                   <div className="mt-8">
