@@ -32,7 +32,7 @@ const Navbar = () => {
                             <div className="hidden md:block hover:font-semibold my-auto align-middle">
                                 <a onClick={() => handleScrool('contact')}>Contact</a>
                             </div>
-                            <button className="text-center font-bold hidden md:block border-4 rounded-full px-6 align-middle border-orange-500 dark:border-orange-700 hover:border-orange-700 hover:text-white hover:bg-orange-700 duration-500">Resume</button>
+                            <button className="text-center font-bold hidden md:block border-4 rounded-xl px-6 align-middle border-orange-500 dark:border-orange-700 hover:border-orange-700 hover:text-white hover:bg-orange-700 duration-500">Resume</button>
                             <div>
                                 <Bars3Icon onClick={() => setSideMenu(true)} className='block lg:hidden cursor-pointer h-8 w-8 text-dark-green' fill='none' stroke='currentColor' />
                             </div>

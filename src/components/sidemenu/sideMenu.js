@@ -15,9 +15,9 @@ import maf from '../../image/maf.png';
         <nav className={`${isShow ? 'translate-x-0' : '-translate-x-full'} fixed inset-y-0 left-0 w-5/6 max-w-sm bg-white shadow-md overflow-y-auto transition duration-300 ease-in-out`}>
           <div className="py-8">
             <div>
-                <img onClick={() => handleScrool('home')} className="w-24 mx-4 hover:scale-100 hover:opacity-90" src={maf} alt=""></img>
+                <img onClick={() => handleScrool('home')} className="w-24 pb-4 mx-4 hover:scale-100 hover:opacity-90" src={maf} alt=""></img>
             </div>
-            <div className="md:block pt-4 mx-8 my-4 hover:font-semibold my-auto align-middle">
+            <div className="md:block mx-8 my-4 hover:font-semibold my-auto align-middle">
                 <a onClick={() => handleScrool('about')}>About Me</a>
             </div>
             <div className="md:block mx-8 my-4 hover:font-semibold my-auto align-middle">
