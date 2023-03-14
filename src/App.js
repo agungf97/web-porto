@@ -22,7 +22,7 @@ function App() {
           <div className="flex justify-between dark:text-white">
             <Sosmed/>
             <div className="fixed bottom-56 hover:-translate-y-2 duration-500 md:block hidden right-4">
-              <div className="font-bold hidden md:block hover:font-semibold my-auto align-middle">
+              <div className="font-bold hover:font-semibold my-auto align-middle">
                 {!darkMode ? 
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
